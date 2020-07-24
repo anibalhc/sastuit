@@ -50,10 +50,7 @@ library(qdap)
 library(tableHTML)
 
 
-library("e1071")
-
-list.of.packages <- c("e1071", "shinyBS")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
+#library("e1071")
+if (!require('e1071')) install.packages('e1071'); library('e1071')
 
 
