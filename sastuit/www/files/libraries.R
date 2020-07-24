@@ -49,8 +49,6 @@ library(qdap)
 
 library(tableHTML)
 
-
-install.packages("e1071")
 library("e1071")
 
 
