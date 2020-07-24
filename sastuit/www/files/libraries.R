@@ -50,21 +50,4 @@ library(qdap)
 library(tableHTML)
 
 
-#library("e1071")
-using<-function(...) {
-    libs<-unlist(list(...))
-    req<-unlist(lapply(libs,require,character.only=TRUE))
-    need<-libs[req==FALSE]
-    if(length(need)>0){ 
-        install.packages(need)
-        lapply(need,require,character.only=TRUE)
-    }
-}
-
-using("e1071")
-
-library("e1071")
-
-
-
-
+install.packages(setdiff(c("e1071"), rownames(installed.packages())))
