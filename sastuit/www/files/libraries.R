@@ -50,20 +50,10 @@ library(qdap)
 library(tableHTML)
 
 
-library(e1071)
+library("e1071")
 
-## First specify the packages of interest
-packages = c("e1071", "shinyBS")
-
-## Now load or install&load all
-package.check <- lapply(
-  packages,
-  FUN = function(x) {
-    if (!require(x, character.only = TRUE)) {
-      install.packages(x, dependencies = TRUE)
-      library(x, character.only = TRUE)
-    }
-  }
-)
+list.of.packages <- c("e1071", "shinyBS")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
 
 
