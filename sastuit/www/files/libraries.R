@@ -50,25 +50,7 @@ library(qdap)
 library(tableHTML)
 
 
-#install.packages(setdiff(c("e1071"), rownames(installed.packages())))
+install.packages("e1071")
+library("e1071")
 
-# Function to Install and Load R Packages
-Install_And_Load <- function(Required_Packages)
-{
-    Remaining_Packages <- Required_Packages[!(Required_Packages %in% installed.packages()[,"Package"])];
 
-    if(length(Remaining_Packages)) 
-    {
-        install.packages(Remaining_Packages);
-    }
-    for(package_name in Required_Packages)
-    {
-        library(package_name,character.only=TRUE,quietly=TRUE);
-    }
-}
-
-# Specify the list of required packages to be installed and load    
-Required_Packages=c("e1071");
-
-# Call the Function
-Install_And_Load(Required_Packages);
