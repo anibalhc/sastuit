@@ -52,3 +52,18 @@ library(tableHTML)
 
 library(e1071)
 
+## First specify the packages of interest
+packages = c("e1071", "shinyBS")
+
+## Now load or install&load all
+package.check <- lapply(
+  packages,
+  FUN = function(x) {
+    if (!require(x, character.only = TRUE)) {
+      install.packages(x, dependencies = TRUE)
+      library(x, character.only = TRUE)
+    }
+  }
+)
+
+
