@@ -1,0 +1,82 @@
+
+#sidebar {
+  background-color:#CDFBFA;
+}
+#add{
+  color: #4d3a7d;
+  font-weight: 500;
+}
+
+.button{
+  display: block;
+  margin: 0 auto;
+  margin-right:center;
+}
+
+body, label, input, button, select { 
+  font-family: "Arial";
+}
+
+#sent,#apiKeys{ 
+  display: block;
+  margin: 0 auto;
+  margin-right:center;
+  background-color: #4CAF50;
+}
+
+
+
+#btn_modelo_IA {
+width: 100px;
+margin-left: auto;
+  background-color: #4CAF50;
+}
+
+
+.btn_download_search{
+  text-align:center;
+  background-color: #304064;
+}
+
+#downloadDataCombinaDatos{ 
+  width:100%; 
+  margin-top: 10px;
+  background-color: #008CBA;
+}
+
+#downloadDataLimpiezaDatos{
+  width:100%; 
+  margin-top: 10px;
+  background-color: #008CBA;
+}
+
+.navbar-nav {
+ float: none !important;
+ }
+
+ .navbar-nav > li:nth-child(6) {
+ float: right;
+ }
+.navbar-nav > li:nth-child(7) {
+ float: right;
+ }
+
+.title_panel_model{
+  font-weight: bolder;
+  text-align:center;
+}
+.result{
+  font-weight:bolder;
+  text-align:center;
+}
+
+
+.btn-primary {
+  background: #4285F4; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #5a95f5 !important; }
+  .btn-primary.active {
+    background-color: #0b51c5 !important; }
+
+img {max-width: 100%; width: 30%; height: 60%}
+      
